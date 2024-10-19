@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelSecure</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scaning.css">
+  <link type="image/png" rel="icon" href="Images/favicon.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+  <header>
+    <div id="navbar">
+      <h1>SentinelSecure <i class="fa-solid fa-shield-virus"></i></h1>
+      <a href="index.html" class="HomeButton nav-button"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="File Checker.html" class="FileChekButton nav-button"><i class="fa-solid fa-file"></i> File Checker</a>
+      <a href="Url Checker.html" class="UrlCheckButton nav-button"><i class="fa-solid fa-globe"></i> Url Checker</a>
+      
+    </div>
+  </header>
+  <div class="hero">
+    <div class="logo">SentinelSecure - File Checker <i class="fa-solid fa-shield-virus"></i></div>
+  </div>
+  <div class="tagline"><i>"Empower your uploads, shield your data."</i></div>
+  <div class="fileuploader" id="parent">
+    <div class="input-div" id="input-div">
+      <input class="input" name="file" type="file" id="fileInput">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" stroke-linejoin="round" stroke-linecap="round"
+        viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="icon">
+        <polyline points="16 16 12 12 8 16"></polyline>
+        <line y2="21" x2="12" y1="12" x1="12"></line>
+        <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+        <polyline points="16 16 12 12 8 16"></polyline>
+      </svg>
+    </div>
+  </div>
+  <p  class="fileSizeWarning" id="fileSizeWarning" style="text-align: center; margin-top: 80px; color: white; font-size: 16px;">Make Sure Your
+    File Size Should Not Exceed 600 MB</p>
+  <script src="file_checker.js"></script>
+</body>
+</html>
